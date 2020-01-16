@@ -1,0 +1,130 @@
+<!-- HTML-5-->
+<!-- DOCTYPE tells thr browser that we are going to use HTML5 tags in your file -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- Google recommends 65 characters including spaces-->
+    <title> Web Design and Development - Dublin &and; Cape Town | Kri8it Digital </title>
+    
+    <!-- utf- Unicode transformation Format , recommended for worldwide web-->
+    <meta charset="utf-8" />
+    
+    <!-- google recommends 165 characters in description-->
+    <meta name="description" content="This is the best company in London"/>
+    
+    <!-- google and other search engines searches the website based on the title, description, and keywords-->
+    
+    <meta name="keywords" content="Web, design, agency, uk" />
+    
+    <!--Link CSS file-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+</head> 
+    
+<body>
+    <!-- Header starts-->
+     <header>
+         <!--container starts-->
+         <div class="container">
+             <!--Box for Logo starts-->
+              <div class="box-30">
+                 <a href="index.html"><img src="images/Logo.png" title="Dublin & Cape Town | Kri8it Digital" />
+                 </a>
+              </div>
+            <!--Box for Logo ends-->
+            <!--Box for Navigation starts-->
+              <div class="box-70">
+              <nav>
+             <!-- Menu bar-->
+              <ul class="top-menu">
+               <li><a href="index.html" > Home</a>
+               </li>
+               <li><a href="about.html"> About</a></li>
+               <!--Drop down Menu for services starts-->
+                <li class="dropdown"><a href="services.html">   Services</a>
+                
+                  <ul class="submenu">
+                    <li><a href="services.html" class="active">Web Design</a></li>
+                    <li><a href="services.html">Graphic design</a></li>
+                    <li><a href="services.html">SEO</a></li>
+                  </ul>
+                  
+                  </li>
+                <!--Drop down Menu for services ends-->
+                  
+                <li><a href="work.html"> Work</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                </ul>
+              </nav>
+             </div>
+            <!--Box for Navigation ends-->
+             
+         </div>
+          <!--container ends-->
+         
+         
+    <!-- Header Ends-->
+     </header>
+      <!--Main starts-->
+        <main>
+            <!--section-1 starts-->
+            <section class="container">
+                <article class="homeintro">
+                    <h1 class="h-display"> Our Services</h1>
+                    <p>
+                    We offer a range of services that will provide you with the perfect platform to launch or to grow. Let’s chat about how <strong class ="green-text">our skill set can complement your business.</strong>
+                    </p>
+                </article>
+                <p>
+                 <a href="contact.html" class="read" style="margin-left:90px"> Contact Us </a>
+                </p>
+        
+            </section>
+            <!--section-1 Ends-->
+            
+            <!--section-2 :video and audio starts-->
+            <section class="container" >
+              <!--my video-->
+              <div style="text-align:center; vertical-align:middle;">
+                <h2 style="text-decoration: underline;"> My Video</h2>
+                <video src="videos/samplevideo.mp4" type="video/mp4" autoplay="autoplay" controls="controls" width="500px" height="500px"  muted="muted">
+                </video>
+              </div>
+              <!--my Audio-->
+              <div style="text-align:center; vertical-align:middle;">
+                <h2 style="text-decoration: underline;"> My Audio</h2>
+                  <audio src="audios/SampleAudio.mp3" type="audio/mp3" controls="controls"></audio>
+             </div>
+
+
+            </section>
+            <!--section-2 :video and audio ends-->
+            
+        </main>
+    <!--main Ends-->
+    <!--footer starts-->
+<footer class="container">
+<!-- Left box-->
+    <div class="box-33">
+        <a href="index.html"><img src="images/Logo.png" title="Dublin & Cape Town | Kri8it Digital" />
+        </a>
+    </div>
+<!-- center box-->
+    
+    <div class="box-33" style="text-align: center;">
+    <img src="images/icons.png" height="50px"/>
+    </div>
+    
+<!--right box-->
+    
+    <div class="box-33" style="padding-top: 15px; font-size: 18px; text-align: right;">
+        
+        &copy; kri8it.com 2018	| Privacy Policy
+    </div>
+</footer>
+    <!--footer Ends-->
+</body>
+
+</html>

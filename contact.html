@@ -1,0 +1,169 @@
+<!-- HTML-5-->
+<!-- DOCTYPE tells thr browser that we are going to use HTML5 tags in your file -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- Google recommends 65 characters including spaces-->
+    <title> Web Design and Development - Dublin &and; Cape Town | Kri8it Digital </title>
+    
+    <!-- utf- Unicode transformation Format , recommended for worldwide web-->
+    <meta charset="utf-8" />
+    
+    <!-- google recommends 165 characters in description-->
+    <meta name="description" content="This is the best company in London"/>
+    
+    <!-- google and other search engines searches the website based on the title, description, and keywords-->
+    
+    <meta name="keywords" content="Web, design, agency, uk" />
+    
+    <!--Link CSS file-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+</head> 
+    
+<body>
+    <!-- Header starts-->
+     <header>
+         <!--container starts-->
+         <div class="container">
+             <!--Box for Logo starts-->
+              <div class="box-30">
+                 <a href="index.html"><img src="images/Logo.png" title="Dublin & Cape Town | Kri8it Digital" />
+                 </a>
+              </div>
+            <!--Box for Logo ends-->
+            <!--Box for Navigation starts-->
+              <div class="box-70">
+              <nav>
+             <!-- Menu bar-->
+              <ul class="top-menu">
+               <li><a href="index.html" > Home</a>
+               </li>
+               <li><a href="about.html"> About</a></li>
+               <!--Drop down Menu for services starts-->
+                <li class="dropdown"><a href="services.html">   Services</a>
+                
+                  <ul class="submenu">
+                    <li><a href="services.html">Web Design</a></li>
+                    <li><a href="services.html">Graphic design</a></li>
+                    <li><a href="services.html">SEO</a></li>
+                  </ul>
+                  
+                  </li>
+                <!--Drop down Menu for services ends-->
+                  
+                <li><a href="work.html"> Work</a></li>
+                <li><a href="contact.html" class="active"> Contact</a></li>
+                </ul>
+              </nav>
+             </div>
+            <!--Box for Navigation ends-->
+             
+         </div>
+          <!--container ends-->
+         
+         
+    <!-- Header Ends-->
+     </header>
+      <!--Main starts-->
+        <main>
+            <!--section-1 starts-->
+            
+        <section>
+             
+                <article class="homeintro">
+                    <h1 class="h-display"> Contact Us</h1>
+                    <p>
+                     We would love to hear from you.
+                     <strong class ="green-text">Give us a call, drop us an email or use the form below</strong>to get in touch and see how we can help your business.
+                    </p>
+                </article>
+                <p>
+                 <a href="contact.html" class="read" style="margin-left:90px"> Contact Us </a>
+                </p>
+        </section>
+        <!--section-1 Ends-->
+            
+        <!--section-2 starts contact us-->
+            
+        <section class="container">
+                
+                <!--contact details-->
+                <div class="box-50 homeintro2">
+                <h2> Contact Details</h2>
+                    <address>
+                    29,Wilson Street,London, EC2 2SJ
+                    </address>
+                    <p>
+                     Tel:<a href="tel:020 7256 2268">
+                        020 72562268</a>
+                    </p>
+                    <p> 
+                    Email:<a href="MAILTO:londontraining2@gmail.com">info@london-training2.com</a></p>
+                </div>
+                <!-- Google Map-->
+                <div class="box-50 ">
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6920771767795!2d-0.088438684229592!3d51.51886497963701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cad775b4eb5%3A0xc5d90ecd08adc31f!2sTraining+Square!5e0!3m2!1sen!2suk!4v1544111337081" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+               
+                </div>
+        </section>
+        <!--section-2  contact us ends-->
+            
+        <!--section-3 starts : contact form-->
+            
+        <section class="container" >
+            
+          <div class="form" >
+              
+            <form action="MAILTO:londontraining2@gmail.com" method="post">
+                First Name:
+                <input type="text" placeholder="Enter Your First name" required name="firstName"/><br/>
+                Last Name:
+                <input type="text" placeholder="Enter Your Last name" required name="lastName"/><br/>
+                Email:
+                <input type="text" placeholder="Enter Your email address" required name="myemail"/><br/>
+                Male:
+                <input type="radio" values="male" required name="gender"/>
+                Female:
+                <input type="radio" values="female" required name="gender"/><br/>
+                
+                <input type="checkbox" checked="checked">
+                
+                I accept the terms and conditions.
+                <br/>
+                <button type="submit" name="btn"> submit</button><br/>
+                <button type="reset" name="btn"> reset</button>
+            </form>
+          </div>
+        </section>
+            
+        </main>
+    <!--main Ends-->
+    <!--footer starts-->
+<footer class="container">
+<!-- Left box-->
+    <div class="box-33">
+        <a href="index.html"><img src="images/Logo.png" title="Dublin & Cape Town | Kri8it Digital" />
+        </a>
+    </div>
+<!-- center box-->
+    
+    <div class="box-33" style="text-align: center;">
+    <img src="images/icons.png" height="50px"/>
+    </div>
+    
+<!--right box-->
+    
+    <div class="box-33" style="padding-top: 15px; font-size: 18px; text-align: right;">
+        
+        &copy; kri8it.com 2018	| Privacy Policy
+    </div>
+</footer>
+    <!--footer Ends-->
+</body>
+
+</html>

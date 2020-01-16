@@ -1,0 +1,360 @@
+
+/* Setting up default rules / Housekeeping rules: Starts */
+
+/* Wild-card / Universal selector, used to apply the properties to all elements */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif, cursive, fantasy;
+    
+    color: black;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    margin-top: 90px;
+}
+
+header::before {
+    display: table;
+    content: "";
+}
+
+header::after {
+     display: table;
+    content: "";
+    clear: both;
+}
+
+
+section::before {
+    display: table;
+    content: "";
+}
+
+section::after {
+     display: table;
+    content: "";
+    clear: both;
+}
+
+footer::before {
+    display: table;
+    content: "";
+}
+
+footer::after {
+     display: table;
+    content: "";
+    clear: both;
+}
+
+/* Setting up default rules / Housekeeping rules: Ends */
+
+
+/**** Header related CSS : Starts ********** */
+
+header {
+    width: 100%;
+    height: 90px;
+    
+    background-color: black;
+    
+    padding: 15px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    z-index: 1;
+    
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-30 {
+    width: 30%;
+    float: left;
+}
+
+.box-70 {
+    width: 70%;
+    float: left;
+}
+
+
+.top-menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+
+.top-menu li {
+    display: inline-block;
+}
+
+.top-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    
+    font-size: 18px;
+}
+
+.top-menu li a:hover {
+    background-color: #0ba9b5;
+}
+
+.active {
+    background-color: #0ba9b5;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+}
+
+
+.submenu li a {
+    display: block;
+    background-color: #0ba9b5;
+    font-size: 12px;
+}
+
+.submenu li a:hover {
+    background-color: orange;
+}
+
+/**** Header related CSS : Ends ********** */
+
+
+/* ***** Footer related CSS : Starts ***** */
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    
+    color: white;
+}
+
+.box-33 {
+    width: 33.33%;
+    float: left;
+    
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* ***** Footer related CSS : Ends ***** */
+
+
+/* ******* Section-2 Homeintro CSS : Starts */
+
+.homeintro{
+    padding: 100px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+
+.h-display {
+    color: #0ba9b5;
+    
+}
+
+.highlight-text {
+    background-color: black;
+    color: #0ba9b5;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.read {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    
+    transition: width 1s;
+}
+
+.read:hover {
+    background-color: #0ba9b5;
+    width: 270px;
+    text-align: center;
+}
+/* ******* Section-2 Homeintro CSS : Ends */
+
+
+/*  ****** Section-3 Services CSS : Starts */
+
+.services {
+        padding: 100px;
+        background-color: gainsboro;
+        width: 100%;
+        float: left;
+}
+
+.btn-trans{
+    display: inline-block;
+    padding: 15px;
+    color: #0ba9b5;
+    
+    text-decoration: none;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0ba9b5;
+    border-radius: 20px;
+    width: 120px;
+    
+    transition: width 2s;
+    
+}
+
+
+.btn-trans:hover {
+    width: 140px;
+    background-color: #0ba9b5;
+    color: white;
+    text-align: center;
+}
+/*  ****** Section-3 Services CSS : Ends */
+
+
+/* ******* Section-4 From the Blog : Starts  */
+
+.zoom {
+    height: 135px;
+    transition: transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.zoom-wrapper{
+    height: 135px;
+    width: 235px;
+    overflow: hidden;
+    border: 5px solid white;
+    background-color:cornflowerblue;
+}
+
+.zoom-wrapper:hover {
+    border: 5px solid black;
+}
+
+/* ******* Section-4 From the Blog : Starts  */
+.logos{
+    height: 200px;
+    padding-left:0px;
+    padding-top: :100px;
+    padding-bottom: 50px
+    
+}
+.logos img{
+    width:13%;
+    margin-top: 50px;
+}
+.green-text{
+    color: aqua;
+}
+.bg-video{
+    position: relative;
+    width:100%;
+    height:600px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow:hidden;
+}
+.bg-video h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    z-index: 7;
+    color:red;
+}
+
+.video-container{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    z-index: 6;
+}
+
+.overlay {
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(255,255,255, 0.5);
+    z-index: 6;
+}
+
+.box-50{
+   width: 50%;
+   float:left;
+}
+.homeintro2{
+    padding: 100px;
+    text-align: justify;
+    font-size:20px;
+    line-height: 40px;
+    }
+.form{
+    font-size:18px; 
+    background-color:#4292f4;
+    width:500px;
+    margin-left:80px;
+    margin-bottom:80px;
+    border-radius:25px 25px 25px 25px;
+    padding: 100px;
+    text-align: justify;
+  
+}
+
+
+
+
+
